@@ -1,10 +1,10 @@
 # AS-TI-IP-Watchlist
 Author: Deepak Kumar Ray 
 
-For any technical questions, please contact me on (Twitter - @roydeepakku, Linkedln- https://www.linkedin.com/in/deepak2/)
+For any technical questions, please contact me on [Twitter]([@roydeepakku](https://twitter.com/roydeepakku) or [Linkedln](https://www.linkedin.com/in/deepak2/).
 
 This Playbook is created to automatically fetch IP from the sites mentioned [here](https://github.com/Bert-JanP/Open-Source-Threat-Intel-Feeds) and Update Into the Sentinel Watchlist.
-Please note that there is a watchlist limitation of 10 million active [Items](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-service-limits#watchlist-limits).
+Please note that there is a watchlist limitation of 10 million active [Items](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-service-limits#watchlist-limits) so you need to delete Old IOC when it crosses the limit.
 
 
 ## Requirements
@@ -103,13 +103,6 @@ union MaliciousIP1, MaliciousIP2, MaliciousIP3, MaliciousIP4, MaliciousIP5, Mali
 | project IP
 ```
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
 ## Reference
 
-[Bert-JanP](https://github.com/Bert-JanP/Open-Source-Threat-Intel-Feeds)
+[Bert-JanP's TI List](https://github.com/Bert-JanP/Open-Source-Threat-Intel-Feeds)
