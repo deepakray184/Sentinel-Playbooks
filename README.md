@@ -100,4 +100,4 @@ Please make sure to update tests as appropriate.
 
 ## Reference
 
-[Bert-JanP](https://github.com/Bert-JanP/Open-Source-Threat-Intel-Feeds))
+[Bert-JanP](https://github.com/Bert-JanP/Open-Source-Threat-Intel-Feeds)
