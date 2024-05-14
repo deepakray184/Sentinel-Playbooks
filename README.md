@@ -10,11 +10,6 @@ Please note that there is a watchlist limitation of 10 million active [Items](ht
 
 Use the below KQL Query to fetch details, This will get updated with new TI Feeds.
 
-```bash
-pip install foobar
-```
-
-## Usage
 
 ```python
 let MISPFeed1 = externaldata(DestIP: string)[@"https://raw.githubusercontent.com/stamparm/ipsum/master/levels/7.txt"] with (format="txt", ignoreFirstRecord=True);
@@ -103,6 +98,6 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-## License
+## Reference
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[Bert-JanP](https://github.com/Bert-JanP/Open-Source-Threat-Intel-Feeds))
