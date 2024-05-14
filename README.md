@@ -6,8 +6,8 @@ For any technical questions, please contact me on (Twitter - @roydeepakku, Linke
 This Playbook is created to automatically fetch IP from the sites mentioned [here](https://github.com/Bert-JanP/Open-Source-Threat-Intel-Feeds) and Update Into the Sentinel Watchlist.
 Please note that there is a watchlist limitation of 10 million active [Items](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-service-limits#watchlist-limits).
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://raw.githubusercontent.com/deepakray184/Sentinel-Playbooks/main/azuredeploy.json)
-[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://raw.githubusercontent.com/deepakray184/Sentinel-Playbooks/main/azuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)]([https://raw.githubusercontent.com/deepakray184/Sentinel-Playbooks/main/azuredeploy.json](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdeepakray184%2FSentinel-Playbooks%2Fmain%2Fazuredeploy.json))
+[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)]([https://raw.githubusercontent.com/deepakray184/Sentinel-Playbooks/main/azuredeploy.json](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdeepakray184%2FSentinel-Playbooks%2Fmain%2Fazuredeploy.json))
 
 ## Requirements
 
