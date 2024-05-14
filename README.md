@@ -6,6 +6,16 @@ For any technical questions, please contact me on (Twitter - @roydeepakku, Linke
 This Playbook is created to automatically fetch IP from the sites mentioned [here](https://github.com/Bert-JanP/Open-Source-Threat-Intel-Feeds) and Update Into the Sentinel Watchlist.
 Please note that there is a watchlist limitation of 10 million active [Items](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-service-limits#watchlist-limits).
 
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)]
+
+## Requirements
+
+The following items are required under the template settings during deployment: 
+
+1. Create a watchlist and Provide an Alias/Description for the same.
+2. Upload a CSV file with one dummy IP (later remove It), Make sure the field Name is "IP" IN the CSV File.
+3. Run the Playbook to upload the IOC (IP).
+
 ## KQL Query
 
 Use the below KQL Query to fetch details, This will get updated with new TI Feeds.
