@@ -7,7 +7,7 @@ Here’s a summary of implementing Threat Intelligence enrichment using KQL quer
 | 	Mirai Feed	 | 	&#9745;		 |  IP         |     https://mirai.security.gives/data/ip_list.txt     |
 | 	ProofPointFeed	 | 	&#9745;		 |     IP      | https://rules.emergingthreats.net/blockrules/compromised-ips.txt         |
 | 	FeodoFeed	 | 	&#9745;		 |       IP    |      https://feodotracker.abuse.ch/downloads/ipblocklist.csv    |
-| 	DiamondFoxFeed	 | 	&#9745;		 |           | https://raw.githubusercontent.com/pan-unit42/iocs/master/diamondfox/diamondfox_panels.txt |
+| 	DiamondFoxFeed	 | 	&#9745;		 |      IP     | https://raw.githubusercontent.com/pan-unit42/iocs/master/diamondfox/diamondfox_panels.txt |
 | 	CINFeed	 | 	&#9745;		 |    IP       |   https://cinsscore.com/list/ci-badguys.txt       |
 | 	blocklistdeFeed	 | 	&#9745;		 |      IP     |  https://lists.blocklist.de/lists/all.txt        |
 | 	C2IntelFeeds	 | 	&#9745;		 |      IP     |     https://raw.githubusercontent.com/drb-ra/C2IntelFeeds/master/feeds/IPC2s-30day.csv     |
