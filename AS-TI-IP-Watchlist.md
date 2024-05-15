@@ -12,8 +12,8 @@ Please note that there is a watchlist limitation of 10 million active [Items](ht
 The following items are required under the template settings during deployment: 
 
 1. Create a watchlist and Provide an Alias/Description for the same.
-2. Upload a CSV file with one dummy IP (later remove It), Make sure the field Name is "IP" IN the CSV File.
-3. Run the Playbook to upload the IOC (IP).
+2. Upload a CSV file with one dummy IP (later remove It), Make sure the field Name is "IP" In the CSV File because the same field is hardcoded in the KQL.
+3. Run the Playbook to upload the IOC (IP) to the watchlist.
 
 ![image](https://github.com/deepakray184/Sentinel-Playbooks/assets/22987796/f2d3c002-7790-4205-a163-b468ecbe39bd)
 
