@@ -103,6 +103,13 @@ union MaliciousIP1, MaliciousIP2, MaliciousIP3, MaliciousIP4, MaliciousIP5, Mali
 | project IP
 ```
 
+## Output
+
+Once the Playbook starts running, It will automatically add the IOC to the watchlist. This watchlist can be used to correlate against RAW logs of different log sources to generate alerts. 
+
+![image](https://github.com/deepakray184/Sentinel-Playbooks/assets/22987796/4d1120a5-41f7-4059-84bf-d1da5eb5d6fb)
+
+
 ## Reference
 
 [Bert-JanP's TI List](https://github.com/Bert-JanP/Open-Source-Threat-Intel-Feeds)
