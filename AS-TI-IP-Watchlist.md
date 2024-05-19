@@ -111,6 +111,16 @@ Once the Playbook starts running, It will automatically add the IOC to the watch
 
 ![image](https://github.com/deepakray184/Sentinel-Playbooks/assets/22987796/4d1120a5-41f7-4059-84bf-d1da5eb5d6fb)
 
+## Usage
+
+Utilize It with different Sentinel Tables which consist of Fieldname as IP address. Use the below query to check if there are any Intel IP matches In the CommonSecurityLog Table.
+
+```bash
+let TI_IP = _GetWatchlist('External_IOC')
+| project IP;
+CommonSecurityLog
+| where SourceIP in (TI_IP)
+```
 
 ## Reference
 
