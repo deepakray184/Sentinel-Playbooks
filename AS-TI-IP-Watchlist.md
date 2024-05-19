@@ -6,6 +6,8 @@ For any technical questions, please contact me on [Twitter](https://twitter.com/
 This Playbook is created to automatically fetch IP from the threat Intel sites mentioned [here](https://github.com/deepakray184/Sentinel-Playbooks/blob/main/README.md) and Update Into the Sentinel Watchlist.
 Please note that there is a watchlist limitation of 10 million active [Items](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-service-limits#watchlist-limits) so you need to delete Old IOC when it crosses the limit.
 
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2Fdeepakray184%2FSentinel%2DPlaybooks%2Fmain%2Fazuredeploy%2Ejson)
+
 
 ## Requirements
 
