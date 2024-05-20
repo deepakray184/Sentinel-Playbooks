@@ -1,4 +1,4 @@
-# AS-TI-Hash-Watchlist
+# AS-TI-Domain-Watchlist
 Author: Deepak Kumar Ray 
 
 For any technical questions, please contact me on [Twitter](https://twitter.com/roydeepakku) or [Linkedln](https://www.linkedin.com/in/deepak2/).
