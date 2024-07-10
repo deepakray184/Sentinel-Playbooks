@@ -38,6 +38,8 @@ let blocklistdeFeed = externaldata(DestIP: string)[@"https://lists.blocklist.de/
 let C2IntelFeeds = externaldata(DestIP: string, ioc: string)[@"https://raw.githubusercontent.com/drb-ra/C2IntelFeeds/master/feeds/IPC2s-30day.csv"] with (format="csv", ignoreFirstRecord=True);
 let DigitalsideFeed = externaldata(DestIP: string)[@"https://osint.digitalside.it/Threat-Intel/lists/latestips.txt"] with (format="txt", ignoreFirstRecord=True);
 let MontySecurityFeed = externaldata(DestIP: string)[@"https://raw.githubusercontent.com/montysecurity/C2-Tracker/main/data/all.txt"] with (format="txt", ignoreFirstRecord=True);
+let threatintelconzraw = externaldata(IPaddr: string)[@"https://www.threatintel.co.nz/wp-content/uploads/IP"] with (format="txt", ignoreFirstRecord=True);
+let ThreatIntelFeed = externaldata(DestIP: string)[@"https://threatview.io/Downloads/IP-High-Confidence-Feed.txt"] with (format="txt", ignoreFirstRecord=True);
 let IPRegex = '[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}';
 let MaliciousIP1 = materialize (
     MISPFeed1 
@@ -99,7 +101,14 @@ let MaliciousIP12 = materialize (
     | where DestIP matches regex IPRegex
     | distinct DestIP
     );
-union MaliciousIP1, MaliciousIP2, MaliciousIP3, MaliciousIP4, MaliciousIP5, MaliciousIP6, MaliciousIP7, MaliciousIP8, MaliciousIP9, MaliciousIP10, MaliciousIP11, MaliciousIP12
+let MaliciousIP13 = materialize (
+       ThreatIntelFeed
+       | where DestIP matches regex IPRegex
+       | distinct DestIP
+    );
+let MaliciousIP14 = threatintelconzraw
+| extend IPv4 = extract_all(@"((?:[0-9]{1,3}\.){3}[0-9]{1,3})", IPaddr)[0];
+union MaliciousIP1, MaliciousIP2, MaliciousIP3, MaliciousIP4, MaliciousIP5, MaliciousIP6, MaliciousIP7, MaliciousIP8, MaliciousIP9, MaliciousIP10, MaliciousIP11, MaliciousIP12, MaliciousIP13, MaliciousIP14
 | where not(ipv4_is_private( DestIP))
 | extend IP = DestIP
 | project IP
