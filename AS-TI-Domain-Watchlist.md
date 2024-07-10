@@ -27,6 +27,21 @@ Use the below KQL Query to fetch details, This will get updated with new TI Feed
 
 ```python
 TBD
+
+let ThreatIntelFeed = externaldata(Domain: string)[@"https://threatview.io/Downloads/DOMAIN-High-Confidence-Feed.txt"] with (format="txt", ignoreFirstRecord=True)
+| project Domain = tolower(Domain);
+EmailUrlInfo
+| join kind=inner ThreatIntelFeed on $left.Url == $right.Domain
+| join EmailEvents on NetworkMessageId
+
+let OpenPhish = externaldata(Url: string)["https://openphish.com/feed.txt"];
+EmailUrlInfo
+| where UrlDomain has_any(OpenPhish)
+| join EmailEvents on NetworkMessageId
+
+let ThreatIntelFeed = externaldata(Domain: string)[@"https://threatview.io/Downloads/DOMAIN-High-Confidence-Feed.txt"] with (format="txt", ignoreFirstRecord=True);
+let IPRegex = '[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}';
+let OpenPhish = externaldata(Url: string)["https://openphish.com/feed.txt"];
 ```
 
 ## Output
